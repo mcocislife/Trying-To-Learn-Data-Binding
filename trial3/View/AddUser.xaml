@@ -1,0 +1,32 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:trial3.View"
+             xmlns:Misc="clr-namespace:trial3.View.Misc"
+             x:Class="trial3.View.AddUser"
+             mc:Ignorable="d" 
+             d:DesignHeight="500" d:DesignWidth="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+        <ListView x:Name="ListViewControl" Margin="5" Grid.Row="2" Grid.ColumnSpan="2">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Choice" Width="350" DisplayMemberBinding="{Binding choice}"/>
+                    <GridViewColumn Header="Quantity" Width="350" DisplayMemberBinding="{Binding quantity}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button x:Name="ChoiceOne" Content="Choice 1" Margin="5" VerticalContentAlignment="Center" Click="ChoiceOneClick" FontWeight="Bold" FontSize="48"/>
+        <Button x:Name="ChoiceTwo" Content="Choice 2" Grid.Column="1" Margin="5" VerticalContentAlignment="Center" Click="ChoiceTwoClick" FontWeight="Bold" FontSize="48"/>
+
+    </Grid>
+</UserControl>
