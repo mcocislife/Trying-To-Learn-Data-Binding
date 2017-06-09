@@ -27,18 +27,17 @@ namespace trial3.View
         public AddUser()
         {
             InitializeComponent();
-            ChoiceHere = new TempVariable();
         }
 
         private void ChoiceOneClick(object sender, RoutedEventArgs e)
         {
-            ChoiceHere.tempChoice = "1";
+            ChoiceHere = new TempVariable { TempChoice = "1" };
             Window window = new Window
             {
                 Title = "Quantity",
                 Content = new Misc.Quantity(),
-                Width = 400,
-                Height = 250,
+                Height = 300,
+                Width = 500,
                 WindowStartupLocation = WindowStartupLocation.CenterScreen,
                 ResizeMode = ResizeMode.NoResize
             };
@@ -47,13 +46,13 @@ namespace trial3.View
 
         private void ChoiceTwoClick(object sender, RoutedEventArgs e)
         {
-            ChoiceHere.tempChoice = "2";
+            ChoiceHere = new TempVariable { TempChoice = "2" };
             Window window = new Window
             {
                 Title = "Quantity",
                 Content = new Misc.Quantity(),
-                Width = 400,
-                Height = 250,
+                Height = 300,
+                Width = 500,
                 WindowStartupLocation = WindowStartupLocation.CenterScreen,
                 ResizeMode = ResizeMode.NoResize
             };

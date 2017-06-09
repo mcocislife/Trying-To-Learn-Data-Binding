@@ -3,6 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
         xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars"
+        DataContext="{Binding Mode=OneWay, RelativeSource={RelativeSource Self}}"
         xmlns:View="clr-namespace:trial3.View" x:Class="trial3.MainWindow"
         Title="MainWindow" Height="500" Width="800">
     <Grid>

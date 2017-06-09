@@ -31,11 +31,12 @@ namespace trial3.View.Misc
             SpinEditQuantity.Focus();
             QuantityEntry = new ObservableCollection<ListViewItems>();
             ChoiceFinal = new TempVariable();
+            SpinEditQuantity.Text = ChoiceFinal.ToString();
         }
 
         private void QuantityButtonClick(object sender, RoutedEventArgs e)
         {
-            QuantityEntry.Add(new ListViewItems { choice = "Choice " + ChoiceFinal, quantity = SpinEditQuantity.Text });
+            QuantityEntry.Add(new ListViewItems { Choice = "Choice " + ChoiceFinal, Quantity = SpinEditQuantity.Text });
             Window.GetWindow(this).Close();
         }
     }
