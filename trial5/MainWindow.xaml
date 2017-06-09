@@ -1,0 +1,11 @@
+﻿<dx:DXWindow
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+        xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars"
+        xmlns:Folder1="clr-namespace:trial5.Folder1" x:Class="trial5.MainWindow"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Folder1:FirstUserControl Margin="5" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+    </Grid>
+</dx:DXWindow>
