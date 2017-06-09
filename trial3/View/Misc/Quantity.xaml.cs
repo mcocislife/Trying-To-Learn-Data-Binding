@@ -25,13 +25,13 @@ namespace trial3.View.Misc
     {
         private ObservableCollection<ListViewItems> QuantityEntry;
         private TempVariable ChoiceFinal;
-        public Quantity()
+        public Quantity(TempVariable c)
         {
+            this.ChoiceFinal = c;
             InitializeComponent();
             SpinEditQuantity.Focus();
             QuantityEntry = new ObservableCollection<ListViewItems>();
-            ChoiceFinal = new TempVariable();
-            SpinEditQuantity.Text = ChoiceFinal.ToString();
+            SpinEditQuantity.Text = ChoiceFinal.TempChoice;
         }
 
         private void QuantityButtonClick(object sender, RoutedEventArgs e)

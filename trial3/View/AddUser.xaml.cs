@@ -35,7 +35,7 @@ namespace trial3.View
             Window window = new Window
             {
                 Title = "Quantity",
-                Content = new Misc.Quantity(),
+                Content = new Misc.Quantity(ChoiceHere),
                 Height = 300,
                 Width = 500,
                 WindowStartupLocation = WindowStartupLocation.CenterScreen,
@@ -50,7 +50,7 @@ namespace trial3.View
             Window window = new Window
             {
                 Title = "Quantity",
-                Content = new Misc.Quantity(),
+                Content = new Misc.Quantity(ChoiceHere),
                 Height = 300,
                 Width = 500,
                 WindowStartupLocation = WindowStartupLocation.CenterScreen,

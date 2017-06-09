@@ -17,7 +17,7 @@
             <RowDefinition Height="1*"/>
             <RowDefinition Height="3*"/>
         </Grid.RowDefinitions>
-        <ListView x:Name="ListViewControl" DataContext="QuantityEntry" Margin="5" Grid.Row="2" Grid.ColumnSpan="2">
+        <ListView x:Name="ListViewControl" Margin="5" Grid.Row="2" Grid.ColumnSpan="2">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Choice" Width="350" DisplayMemberBinding="{Binding choice}"/>
